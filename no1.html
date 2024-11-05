@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Pendaftaran</title>
+    <style>
+        body{
+            margin: 0px;
+            height: 98vh;
+            font-weight: bold;
+        }
+        .container{
+            align-items: center;
+            width: 600px;
+            margin: 10px auto;
+            padding: 20px;
+        }
+        .judul {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+        }
+        img {
+            margin-top: 20px;
+            width: 100px;
+        }
+        form{
+            align-items: center;
+            width: 550px;
+            margin: 10px auto;
+        }
+        .grup {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        label {
+            width: 25%;
+        }
+        input[type="text"], input[type="email"], input[type="tel"], input[type="date"], select, textarea {
+            width: 60%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .programStudi, .JK{
+            display: flex;
+            margin-bottom: 15px;
+            align-items: center;
+            gap: 60px;
+        }
+        .JKInside {
+            font-weight: normal;
+        }
+        .button {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        #button {
+            background-color: green;
+            color: white;
+            border: none;
+            padding: 10px 30px;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+        marquee{
+            background-color: green;
+            padding: 15px;
+            margin-top: 15px;
+            color: white;
+            font-size: large;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <marquee behavior="scroll" direction="right">
+            Selamat Datang di Formulir Pendaftaran! Harap isi data dengan lengkap dan benar.
+        </marquee>
+        <div class="judul">
+            <img src="/assett/unindra.png" alt="Logo Unindra">
+            <h1>Formulir Pendaftaran</h1>
+            <img src="/assett/unindra.png" alt="Logo Unindra">
+        </div>
+        <form action="">
+            <div class="grup">
+                <label for="Nama">Nama Lengkap:</label>
+                <input type="text" id="Nama">
+            </div>
+            <div class="grup">
+                <label for="Email">Email:</label>
+                <input type="email" id="Email">
+            </div>
+            <div class="grup">
+                <label for="Telp">Nomor Telepon:</label>
+                <input type="tel" id="Telp">
+            </div>
+            <div class="grup">
+                <label for="TanggalLahir">Tanggal Lahir:</label>
+                <input type="date" id="TanggalLahir">
+            </div>
+            <div class="JK">
+                <label>Jenis Kelamin:</label>
+                <div class="JKInside">
+                    <input type="radio" id="Laki-Laki" name="JK" value="Laki-Laki">
+                    <label for="Laki-Laki">Laki-Laki</label>
+                    <input type="radio" id="Perempuan" name="JK" value="Perempuan">
+                    <label for="Perempuan">Perempuan</label>
+                </div>
+            </div>
+            <div class="programStudi">
+                <label for="Program Studi">Program Studi:</label>
+                <select name="programStudi" id="programStudi">
+                    <option value="Teknik Informatika">Teknik Informatika</option>
+                    <option value="Sistem Informatika">Sistem Informatika</option>
+                    <option value="Fisika">Fisika</option>
+                </select>
+            </div>
+            <div class="grup">
+                <label for="Alamat">Alamat:</label>
+                <textarea name="Alamat" id="Alamat" rows="4"></textarea>
+            </div>
+            <div class="button">
+                <button type="button" id="button" value="Kirim">Kirim</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

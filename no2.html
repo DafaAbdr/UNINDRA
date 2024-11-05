@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jadwal Matapelajaran</title>
+    <style>
+        table {
+            width: 50%;
+            padding: 0px;
+            border-color: black;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 10px;
+        }
+        .color1 {
+            background-color: #ffcccc;
+        }
+        .color2 {
+            background-color: #ccffcc;
+        }
+        .color3 {
+            background-color: #ccccff;
+        }
+        .color4{
+            background-color: #ffffcc;
+        }
+    </style>
+</head>
+<body>
+    <h1 align="center">Jadwal Mata Pelajaran Siswa</h1>
+    <table border="1" align="center">
+        <thead>
+            <tr>
+                <th rowspan="2" class="color1">Nama Siswa</th>
+                <th rowspan="2" class="color2">Mata Pelajaran</th>
+                <th colspan="2" class="color3">Jadwal</th>
+                
+            </tr>
+            <tr>
+                <th class="color3">Hari</th>
+                <th class="color4">Jam</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="2" class="color1">Ahmad</td>
+                <td class="color2">Matematika</td>
+                <td class="color3">Senin</td>
+                <td class="color4">08.00 - 09.30</td>
+            </tr>
+            <tr>
+                <td class="color2">Bahasa Inggris</td>
+                <td class="color3">Selasa</td>
+                <td class="color4">10.00 - 11.30</td>
+            </tr>
+            <tr>
+                <td class="color1">Budi</td>
+                <td class="color2">Fisika</td>
+                <td class="color3">Rabu</td>
+                <td class="color4">09.00 - 10.30</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
