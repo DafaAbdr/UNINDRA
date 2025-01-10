@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hitung Total Belanja dan Diskon</title>
+</head>
+    <body>
+        <h2>Hitung Total Belanja dan Diskon</h2>
+        <table>
+            <tr>
+                <td>Harga Item 1 (Rp):</td>
+                <td><input type="number" id="item1"></td>
+            </tr>
+            <tr>
+                <td>Harga Item 2 (Rp):</td>
+                <td><input type="number" id="item2"></td>
+            </tr>
+            <tr>
+                <td>Harga Item 3 (Rp):</td>
+                <td><input type="number" id="item3"></td>
+            </tr>
+            <tr>
+                <td colspan="2"><button onclick="hitungTotal()">Hitung Total dan Diskon</button></td>
+            </tr>
+        </table>
+        <h3>Hasil Perhitungan:</h3>
+        <p id="hasil"></p>
+        <script src="belanja.js"></script>
+    </body>
+</html>
